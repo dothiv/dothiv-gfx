@@ -55,16 +55,16 @@ png/browser-plugin/toolbar-on-b.png: svg/logo.svg
 	inkscape -b '#ffffff' -w 19 -h 19 -e $@ $?
 
 png/browser-plugin/toolbar-off-a.png: svg/browser-plugin/off.svg
-	inkscape -b '#ffffff' -w 16 -h 16 -e $@ $?
+	inkscape -b '#d3d3d3' -w 16 -h 16 -e $@ $?
 
 png/browser-plugin/toolbar-off-b.png: svg/browser-plugin/off.svg
-	inkscape -b '#ffffff' -w 19 -h 19 -e $@ $?
+	inkscape -b '#d3d3d3' -w 19 -h 19 -e $@ $?
 
 png/browser-plugin/toolbar-disabled-a.png: svg/browser-plugin/disabled.svg
-	inkscape -b '#ffffff' -w 16 -h 16 -e $@ $?
+	inkscape -b '#d3d3d3' -w 16 -h 16 -e $@ $?
 
 png/browser-plugin/toolbar-disabled-b.png: svg/browser-plugin/disabled.svg
-	inkscape -b '#ffffff' -w 19 -h 19 -e $@ $?
+	inkscape -b '#d3d3d3' -w 19 -h 19 -e $@ $?
 
 png/browser-plugin/toolbar-on-a@2x.png: svg/logo.svg
 	inkscape -b '#ffffff' -w 32 -h 32 -e $@ $?
@@ -73,16 +73,16 @@ png/browser-plugin/toolbar-on-b@2x.png: svg/logo.svg
 	inkscape -b '#ffffff' -w 38 -h 38 -e $@ $?
 
 png/browser-plugin/toolbar-off-a@2x.png: svg/browser-plugin/off.svg
-	inkscape -b '#ffffff' -w 32 -h 32 -e $@ $?
+	inkscape -b '#d3d3d3' -w 32 -h 32 -e $@ $?
 
 png/browser-plugin/toolbar-off-b@2x.png: svg/browser-plugin/off.svg
-	inkscape -b '#ffffff' -w 38 -h 38 -e $@ $?
+	inkscape -b '#d3d3d3' -w 38 -h 38 -e $@ $?
 
 png/browser-plugin/toolbar-disabled-a@2x.png: svg/browser-plugin/disabled.svg
-	inkscape -b '#ffffff' -w 32 -h 32 -e $@ $?
+	inkscape -b '#d3d3d3' -w 32 -h 32 -e $@ $?
 
 png/browser-plugin/toolbar-disabled-b@2x.png: svg/browser-plugin/disabled.svg
-	inkscape -b '#ffffff' -w 38 -h 38 -e $@ $?
+	inkscape -b '#d3d3d3' -w 38 -h 38 -e $@ $?
 
 convert: png/browser-plugin/email.png \
 	png/browser-plugin/email@2x.png \
