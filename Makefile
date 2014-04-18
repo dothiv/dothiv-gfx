@@ -1,3 +1,6 @@
+png/logo-white-256.png: svg/logo.svg
+	inkscape -b '#ffffff' -y 192 -w 256 -h 256 -e $@ $?
+
 png/browser-plugin/email.png: svg/browser-plugin/email.svg
 	inkscape -w 32 -h 32 -e $@ $?
 
@@ -84,7 +87,9 @@ png/browser-plugin/toolbar-disabled-a@2x.png: svg/browser-plugin/disabled.svg
 png/browser-plugin/toolbar-disabled-b@2x.png: svg/browser-plugin/disabled.svg
 	inkscape -b '#d3d3d3' -w 38 -h 38 -e $@ $?
 
-convert: png/browser-plugin/email.png \
+convert: \
+	png/logo-white-256.png \
+	png/browser-plugin/email.png \
 	png/browser-plugin/email@2x.png \
 	png/browser-plugin/facebook.png \
 	png/browser-plugin/facebook@2x.png \
