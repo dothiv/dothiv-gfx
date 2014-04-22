@@ -136,8 +136,8 @@ convert: \
 	png/browser-plugin/toolbar-disabled-a@2x.png \
 	png/browser-plugin/toolbar-disabled-b@2x.png
 
-optimize: png/browser-plugin/*.png
-	optipng $?
+optimize: png/browser-plugin/*.png png/banner/*.png
+	optipng -quiet $?
 
 copy-chrome:
 	mkdir -p build/dothiv-chrome/images/share
