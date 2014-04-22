@@ -1,5 +1,20 @@
+# Logo
+
 png/logo-white-256.png: svg/logo.svg
 	inkscape -b '#ffffff' -y 192 -w 256 -h 256 -e $@ $?
+
+# Banner
+
+png/banner/ribbon.png: bitmap/ribbon.png
+	convert $? -resize 32x32\> $@
+
+png/banner/ribbon@2x.png: bitmap/ribbon.png
+	convert $? -resize 64x64\> $@
+
+png/banner/ribbon@4x.png: bitmap/ribbon.png
+	convert $? -resize 128x128\> $@
+
+# Browser Plugin
 
 png/browser-plugin/email.png: svg/browser-plugin/email.svg
 	inkscape -w 32 -h 32 -e $@ $?
@@ -89,6 +104,9 @@ png/browser-plugin/toolbar-disabled-b@2x.png: svg/browser-plugin/disabled.svg
 
 convert: \
 	png/logo-white-256.png \
+	png/banner/ribbon.png \
+	png/banner/ribbon@2x.png \
+	png/banner/ribbon@4x.png \
 	png/browser-plugin/email.png \
 	png/browser-plugin/email@2x.png \
 	png/browser-plugin/facebook.png \
