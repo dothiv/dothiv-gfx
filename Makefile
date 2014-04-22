@@ -14,6 +14,48 @@ png/banner/ribbon@2x.png: bitmap/ribbon.png
 png/banner/ribbon@4x.png: bitmap/ribbon.png
 	convert $? -resize 128x128\> $@
 
+gif/coin-close@2x.gif: bitmap/coin-close-animation/*.png
+	convert bitmap/coin-close-animation/01_coin_100.png -background White -flatten png/coin-close-animation/01@2x.png
+	convert bitmap/coin-close-animation/02_coin_66.png -background White -flatten png/coin-close-animation/02@2x.png
+	convert bitmap/coin-close-animation/03_coin_33.png -background White -flatten png/coin-close-animation/03@2x.png
+	convert bitmap/coin-close-animation/04_coin_5.png -background White -flatten png/coin-close-animation/04@2x.png
+	convert bitmap/coin-close-animation/05_close_33.png -background White -flatten png/coin-close-animation/05@2x.png
+	convert bitmap/coin-close-animation/06_close_66.png -background White -flatten png/coin-close-animation/06@2x.png
+	convert bitmap/coin-close-animation/07_close_100.png -background White -flatten png/coin-close-animation/07@2x.png
+	convert -dispose Background \
+		-delay 100 \
+		-colors 16 png/coin-close-animation/01@2x.png \
+		-delay 5 \
+		-colors 16 png/coin-close-animation/02@2x.png \
+		-colors 16 png/coin-close-animation/03@2x.png \
+		-colors 16 png/coin-close-animation/04@2x.png \
+		-colors 16 png/coin-close-animation/05@2x.png \
+		-colors 16 png/coin-close-animation/06@2x.png \
+		-colors 16 png/coin-close-animation/07@2x.png \
+		-loop 1 \
+		gif/coin-close@2x.gif
+
+gif/coin-close.gif: bitmap/coin-close-animation/*.png
+	convert -resize 50% bitmap/coin-close-animation/01_coin_100.png -background White -flatten png/coin-close-animation/01.png
+	convert -resize 50% bitmap/coin-close-animation/02_coin_66.png -background White -flatten png/coin-close-animation/02.png
+	convert -resize 50% bitmap/coin-close-animation/03_coin_33.png -background White -flatten png/coin-close-animation/03.png
+	convert -resize 50% bitmap/coin-close-animation/04_coin_5.png -background White -flatten png/coin-close-animation/04.png
+	convert -resize 50% bitmap/coin-close-animation/05_close_33.png -background White -flatten png/coin-close-animation/05.png
+	convert -resize 50% bitmap/coin-close-animation/06_close_66.png -background White -flatten png/coin-close-animation/06.png
+	convert -resize 50% bitmap/coin-close-animation/07_close_100.png -background White -flatten png/coin-close-animation/07.png
+	convert -dispose Background \
+		-delay 100 \
+		-colors 16 png/coin-close-animation/01.png \
+		-delay 5 \
+		-colors 16 png/coin-close-animation/02.png \
+		-colors 16 png/coin-close-animation/03.png \
+		-colors 16 png/coin-close-animation/04.png \
+		-colors 16 png/coin-close-animation/05.png \
+		-colors 16 png/coin-close-animation/06.png \
+		-colors 16 png/coin-close-animation/07.png \
+		-loop 1 \
+		gif/coin-close.gif
+
 # Browser Plugin
 
 png/browser-plugin/email.png: svg/browser-plugin/email.svg
@@ -136,7 +178,7 @@ convert: \
 	png/browser-plugin/toolbar-disabled-a@2x.png \
 	png/browser-plugin/toolbar-disabled-b@2x.png
 
-optimize: png/browser-plugin/*.png png/banner/*.png
+optimize: png/browser-plugin/*.png png/banner/*.png png/coin-close-animation/*.png
 	optipng -quiet $?
 
 copy-chrome:
