@@ -5,14 +5,14 @@ png/logo-white-256.png: svg/logo.svg
 
 # Banner
 
-png/banner/ribbon.png: bitmap/ribbon.png
-	convert $? -resize 32x32\> $@
+png/banner/ribbon.png: svg/ribbon.svg
+	inkscape -h 32 -e $@ $?
 
-png/banner/ribbon@2x.png: bitmap/ribbon.png
-	convert $? -resize 64x64\> $@
+png/banner/ribbon@2x.png: svg/ribbon.svg
+	inkscape -h 64 -e $@ $?
 
-png/banner/ribbon@4x.png: bitmap/ribbon.png
-	convert $? -resize 128x128\> $@
+png/banner/ribbon@4x.png: svg/ribbon.svg
+	inkscape -h 128 -e $@ $?
 
 gif/coin-close@2x.gif: bitmap/coin-close-animation/*.png
 	convert bitmap/coin-close-animation/01_coin_100.png -background White -flatten png/coin-close-animation/01@2x.png
