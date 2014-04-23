@@ -23,50 +23,71 @@ png/banner/ribbon.png: svg/ribbon.svg
 png/banner/ribbon@2x.png: svg/ribbon.svg
 	inkscape -h 64 -e $@ $?
 
+png/banner/ribbon@3x.png: svg/ribbon.svg
+	inkscape -h 96 -e $@ $?
+
 png/banner/ribbon@4x.png: svg/ribbon.svg
 	inkscape -h 128 -e $@ $?
 
-gif/coin-close@2x.gif: bitmap/coin-close-animation/*.png
-	convert bitmap/coin-close-animation/01_coin_100.png -background White -flatten png/coin-close-animation/01@2x.png
-	convert bitmap/coin-close-animation/02_coin_66.png -background White -flatten png/coin-close-animation/02@2x.png
-	convert bitmap/coin-close-animation/03_coin_33.png -background White -flatten png/coin-close-animation/03@2x.png
-	convert bitmap/coin-close-animation/04_coin_5.png -background White -flatten png/coin-close-animation/04@2x.png
-	convert bitmap/coin-close-animation/05_close_33.png -background White -flatten png/coin-close-animation/05@2x.png
-	convert bitmap/coin-close-animation/06_close_66.png -background White -flatten png/coin-close-animation/06@2x.png
-	convert bitmap/coin-close-animation/07_close_100.png -background White -flatten png/coin-close-animation/07@2x.png
-	convert -dispose Background \
-		-delay 100 \
-		-colors 16 png/coin-close-animation/01@2x.png \
-		-delay 5 \
-		-colors 16 png/coin-close-animation/02@2x.png \
-		-colors 16 png/coin-close-animation/03@2x.png \
-		-colors 16 png/coin-close-animation/04@2x.png \
-		-colors 16 png/coin-close-animation/05@2x.png \
-		-colors 16 png/coin-close-animation/06@2x.png \
-		-colors 16 png/coin-close-animation/07@2x.png \
-		-loop 1 \
-		gif/coin-close@2x.gif
+png/banner/facebook.png: svg/browser-plugin/facebook.svg
+	inkscape -w 24 -e $@ $?
 
-gif/coin-close.gif: bitmap/coin-close-animation/*.png
-	convert -resize 50% bitmap/coin-close-animation/01_coin_100.png -background White -flatten png/coin-close-animation/01.png
-	convert -resize 50% bitmap/coin-close-animation/02_coin_66.png -background White -flatten png/coin-close-animation/02.png
-	convert -resize 50% bitmap/coin-close-animation/03_coin_33.png -background White -flatten png/coin-close-animation/03.png
-	convert -resize 50% bitmap/coin-close-animation/04_coin_5.png -background White -flatten png/coin-close-animation/04.png
-	convert -resize 50% bitmap/coin-close-animation/05_close_33.png -background White -flatten png/coin-close-animation/05.png
-	convert -resize 50% bitmap/coin-close-animation/06_close_66.png -background White -flatten png/coin-close-animation/06.png
-	convert -resize 50% bitmap/coin-close-animation/07_close_100.png -background White -flatten png/coin-close-animation/07.png
+png/banner/twitter.png: svg/browser-plugin/twitter.svg
+	inkscape -w 24 -e $@ $?
+
+png/banner/facebook-small.png: svg/browser-plugin/facebook.svg
+	inkscape -w 16 -e $@ $?
+
+png/banner/twitter-small.png: svg/browser-plugin/twitter.svg
+	inkscape -w 16 -e $@ $?
+
+gif/banner/coin-close@2x.gif: bitmap/coin-close-animation/*.png
+	mkdir -p png/banner/
+	mkdir -p gif/banner/
+	convert bitmap/coin-close-animation/01_coin_100.png -background '#f6f6f6' -transparent '#f6f6f6' -flatten png/banner/coin-close-animation/01@2x.png
+	convert bitmap/coin-close-animation/02_coin_66.png -background '#f6f6f6' -transparent '#f6f6f6' -flatten png/banner/coin-close-animation/02@2x.png
+	convert bitmap/coin-close-animation/03_coin_33.png -background '#f6f6f6' -transparent '#f6f6f6' -flatten png/banner/coin-close-animation/03@2x.png
+	convert bitmap/coin-close-animation/04_coin_5.png -background '#f6f6f6' -transparent '#f6f6f6' -flatten png/banner/coin-close-animation/04@2x.png
+	convert bitmap/coin-close-animation/05_close_33.png -background '#f6f6f6' -transparent '#f6f6f6' -flatten png/banner/coin-close-animation/05@2x.png
+	convert bitmap/coin-close-animation/06_close_66.png -background '#f6f6f6' -transparent '#f6f6f6' -flatten png/banner/coin-close-animation/06@2x.png
+	convert bitmap/coin-close-animation/07_close_100.png -background '#f6f6f6' -transparent '#f6f6f6' -flatten png/banner/coin-close-animation/07@2x.png
 	convert -dispose Background \
 		-delay 100 \
-		-colors 16 png/coin-close-animation/01.png \
+		png/banner/coin-close-animation/01@2x.png \
 		-delay 5 \
-		-colors 16 png/coin-close-animation/02.png \
-		-colors 16 png/coin-close-animation/03.png \
-		-colors 16 png/coin-close-animation/04.png \
-		-colors 16 png/coin-close-animation/05.png \
-		-colors 16 png/coin-close-animation/06.png \
-		-colors 16 png/coin-close-animation/07.png \
+		png/banner/coin-close-animation/02@2x.png \
+		png/banner/coin-close-animation/03@2x.png \
+		png/banner/coin-close-animation/04@2x.png \
+		png/banner/coin-close-animation/05@2x.png \
+		png/banner/coin-close-animation/06@2x.png \
+		png/banner/coin-close-animation/07@2x.png \
 		-loop 1 \
-		gif/coin-close.gif
+		-transparent '#f6f6f6' \
+		gif/banner/coin-close@2x.gif
+
+gif/banner/coin-close.gif: bitmap/coin-close-animation/*.png
+	mkdir -p png/banner/
+	mkdir -p gif/banner/
+	convert -resize 50% bitmap/coin-close-animation/01_coin_100.png -background '#f6f6f6' -transparent '#f6f6f6' -flatten png/banner/coin-close-animation/01.png
+	convert -resize 50% bitmap/coin-close-animation/02_coin_66.png -background '#f6f6f6' -transparent '#f6f6f6' -flatten png/banner/coin-close-animation/02.png
+	convert -resize 50% bitmap/coin-close-animation/03_coin_33.png -background '#f6f6f6' -transparent '#f6f6f6' -flatten png/banner/coin-close-animation/03.png
+	convert -resize 50% bitmap/coin-close-animation/04_coin_5.png -background '#f6f6f6' -transparent '#f6f6f6' -flatten png/banner/coin-close-animation/04.png
+	convert -resize 50% bitmap/coin-close-animation/05_close_33.png -background '#f6f6f6' -transparent '#f6f6f6' -flatten png/banner/coin-close-animation/05.png
+	convert -resize 50% bitmap/coin-close-animation/06_close_66.png -background '#f6f6f6' -transparent '#f6f6f6' -flatten png/banner/coin-close-animation/06.png
+	convert -resize 50% bitmap/coin-close-animation/07_close_100.png -background '#f6f6f6' -transparent '#f6f6f6' -flatten png/banner/coin-close-animation/07.png
+	convert -dispose previous \
+		-delay 100 \
+		png/banner/coin-close-animation/01.png \
+		-delay 5 \
+		png/banner/coin-close-animation/02.png \
+		png/banner/coin-close-animation/03.png \
+		png/banner/coin-close-animation/04.png \
+		png/banner/coin-close-animation/05.png \
+		png/banner/coin-close-animation/06.png \
+		png/banner/coin-close-animation/07.png \
+		-loop 1 \
+		-transparent '#f6f6f6' \
+		gif/banner/coin-close.gif
 
 # Browser Plugin
 
@@ -163,7 +184,14 @@ convert: \
 	png/logo-white-256.png \
 	png/banner/ribbon.png \
 	png/banner/ribbon@2x.png \
+	png/banner/ribbon@3x.png \
 	png/banner/ribbon@4x.png \
+	png/banner/facebook.png \
+	png/banner/twitter.png \
+	png/banner/facebook-small.png \
+	png/banner/twitter-small.png \
+	gif/banner/coin-close.gif \
+	gif/banner/coin-close@2x.gif \
 	png/browser-plugin/email.png \
 	png/browser-plugin/email@2x.png \
 	png/browser-plugin/facebook.png \
@@ -194,7 +222,7 @@ convert: \
 	png/browser-plugin/toolbar-disabled-b@2x.png
 
 optimize:
-	optipng -quiet png/browser-plugin/*.png png/banner/*.png png/coin-close-animation/*.png
+	optipng -quiet png/browser-plugin/*.png png/banner/*.png png/banner/coin-close-animation/*.png
 
 copy-chrome:
 	mkdir -p build/dothiv-chrome/images/share

@@ -16,7 +16,7 @@ This repository contains graphics used by various dotHIV projects.
 
 ## Banner Graphics
 
-### ![coin close](./gif/coin-close@2x.gif) // Coin Close Animation
+### ![coin close](./gif/banner/coin-close@2x.gif) // Coin Close Animation
 
  * [Source Frames](./bitmap/coin-close-animation/)
  * License: No use without written permission.
