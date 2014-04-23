@@ -3,6 +3,18 @@
 png/logo-white-256.png: svg/logo.svg
 	inkscape -b '#ffffff' -y 192 -w 256 -h 256 -e $@ $?
 
+png/logo.png: svg/logo.svg
+	inkscape -b '#ffffff' -w 32 -e $@ $?
+	convert $@ -trim $@
+
+png/logo@2x.png: svg/logo.svg
+	inkscape -b '#ffffff' -w 64 -e $@ $?
+	convert $@ -trim $@
+
+png/logo@4x.png: svg/logo.svg
+	inkscape -b '#ffffff' -w 128 -e $@ $?
+	convert $@ -trim $@
+
 # Banner
 
 png/banner/ribbon.png: svg/ribbon.svg
@@ -145,6 +157,9 @@ png/browser-plugin/toolbar-disabled-b@2x.png: svg/browser-plugin/disabled.svg
 	inkscape -b '#d3d3d3' -w 38 -h 38 -e $@ $?
 
 convert: \
+	png/logo.png \
+	png/logo@2x.png \
+	png/logo@4x.png \
 	png/logo-white-256.png \
 	png/banner/ribbon.png \
 	png/banner/ribbon@2x.png \
@@ -178,8 +193,8 @@ convert: \
 	png/browser-plugin/toolbar-disabled-a@2x.png \
 	png/browser-plugin/toolbar-disabled-b@2x.png
 
-optimize: png/browser-plugin/*.png png/banner/*.png png/coin-close-animation/*.png
-	optipng -quiet $?
+optimize:
+	optipng -quiet png/browser-plugin/*.png png/banner/*.png png/coin-close-animation/*.png
 
 copy-chrome:
 	mkdir -p build/dothiv-chrome/images/share
