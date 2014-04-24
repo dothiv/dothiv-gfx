@@ -18,28 +18,16 @@ png/logo@4x.png: svg/logo.svg
 # Banner
 
 png/banner/ribbon.png: svg/ribbon.svg
-	inkscape -h 32 -e $@ $?
+	inkscape -h 44 -e $@ $?
 
 png/banner/ribbon@2x.png: svg/ribbon.svg
-	inkscape -h 64 -e $@ $?
-
-png/banner/ribbon@3x.png: svg/ribbon.svg
 	inkscape -h 96 -e $@ $?
-
-png/banner/ribbon@4x.png: svg/ribbon.svg
-	inkscape -h 128 -e $@ $?
 
 png/banner/facebook.png: svg/browser-plugin/facebook.svg
 	inkscape -w 24 -e $@ $?
 
 png/banner/twitter.png: svg/browser-plugin/twitter.svg
 	inkscape -w 24 -e $@ $?
-
-png/banner/facebook-small.png: svg/browser-plugin/facebook.svg
-	inkscape -w 16 -e $@ $?
-
-png/banner/twitter-small.png: svg/browser-plugin/twitter.svg
-	inkscape -w 16 -e $@ $?
 
 gif/banner/coin-close@2x.gif: bitmap/coin-close-animation/*.png
 	mkdir -p png/banner/
@@ -184,12 +172,8 @@ convert: \
 	png/logo-white-256.png \
 	png/banner/ribbon.png \
 	png/banner/ribbon@2x.png \
-	png/banner/ribbon@3x.png \
-	png/banner/ribbon@4x.png \
 	png/banner/facebook.png \
 	png/banner/twitter.png \
-	png/banner/facebook-small.png \
-	png/banner/twitter-small.png \
 	gif/banner/coin-close.gif \
 	gif/banner/coin-close@2x.gif \
 	png/browser-plugin/email.png \
