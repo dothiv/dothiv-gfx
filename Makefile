@@ -232,7 +232,7 @@ copy-chrome:
 copy-firefox:
 	mkdir -p build/dothiv-firefox/data/images/share
 	cp png/browser-plugin/install-icon@3x.png build/dothiv-firefox/icon.png
-	cp png/browser-plugin/install-icon@3x.png build/dothiv-firefox/data/icon.png
+	cp png/browser-plugin/install-icon@4x.png build/dothiv-firefox/icon64.png
 	cp png/browser-plugin/logo.png build/dothiv-firefox/data/images/
 	cp png/browser-plugin/logo@2x.png build/dothiv-firefox/data/images/
 	cp png/browser-plugin/email.png build/dothiv-firefox/data/images/share
@@ -245,8 +245,9 @@ copy-firefox:
 	cp png/browser-plugin/linkedin@2x.png build/dothiv-firefox/data/images/share
 	cp png/browser-plugin/twitter.png build/dothiv-firefox/data/images/share
 	cp png/browser-plugin/twitter@2x.png build/dothiv-firefox/data/images/share
-	mkdir -p build/dothiv-firefox/toolbar
-	cp png/browser-plugin/toolbar-* build/dothiv-firefox/toolbar/
+	# FIXME: New sizes.
+	mkdir -p build/dothiv-firefox/data/images/toolbar
+	cp png/browser-plugin/toolbar-* build/dothiv-firefox/data/images/toolbar/
 
 copy-browser: copy-chrome copy-firefox
 
