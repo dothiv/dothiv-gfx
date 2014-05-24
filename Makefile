@@ -1,7 +1,7 @@
 # Logo
 
 png/logo-white-256.png: svg/logo.svg
-	inkscape -b '#ffffff' -y 192 -w 256 -h 256 -e $@ $?
+	inkscape -b '#ffffff' -y 182 -w 256 -h 256 -e $@ $?
 
 png/logo.png: svg/logo.svg
 	inkscape -b '#ffffff' -w 32 -e $@ $?
@@ -129,42 +129,51 @@ png/browser-plugin/install-icon@4x.png: svg/logo.svg
 png/browser-plugin/install-icon@8x.png: svg/logo.svg
 	inkscape -b '#ffffff' -w 128 -h 128 -e $@ $?
 
-png/browser-plugin/toolbar-on-a.png: svg/logo.svg
+png/browser-plugin/toolbar-on-16.png: svg/logo.svg
 	inkscape -b '#ffffff' -w 16 -h 16 -e $@ $?
 
-png/browser-plugin/toolbar-on-b.png: svg/logo.svg
-	inkscape -b '#ffffff' -w 19 -h 19 -e $@ $?
+png/browser-plugin/toolbar-on-18.png: svg/logo.svg
+	inkscape -b '#ffffff' -w 18 -h 18 -e $@ $?
 
-png/browser-plugin/toolbar-off-a.png: svg/browser-plugin/off.svg
+png/browser-plugin/toolbar-off-16.png: svg/browser-plugin/off.svg
 	inkscape -b '#d3d3d3' -w 16 -h 16 -e $@ $?
 
-png/browser-plugin/toolbar-off-b.png: svg/browser-plugin/off.svg
-	inkscape -b '#d3d3d3' -w 19 -h 19 -e $@ $?
+png/browser-plugin/toolbar-off-18.png: svg/browser-plugin/off.svg
+	inkscape -b '#d3d3d3' -w 18 -h 18 -e $@ $?
 
-png/browser-plugin/toolbar-disabled-a.png: svg/browser-plugin/disabled.svg
+png/browser-plugin/toolbar-disabled-16.png: svg/browser-plugin/disabled.svg
 	inkscape -b '#d3d3d3' -w 16 -h 16 -e $@ $?
 
-png/browser-plugin/toolbar-disabled-b.png: svg/browser-plugin/disabled.svg
-	inkscape -b '#d3d3d3' -w 19 -h 19 -e $@ $?
+png/browser-plugin/toolbar-disabled-18.png: svg/browser-plugin/disabled.svg
+	inkscape -b '#d3d3d3' -w 18 -h 18 -e $@ $?
 
-png/browser-plugin/toolbar-on-a@2x.png: svg/logo.svg
+png/browser-plugin/toolbar-on-32.png: svg/logo.svg
 	inkscape -b '#ffffff' -w 32 -h 32 -e $@ $?
 
-png/browser-plugin/toolbar-on-b@2x.png: svg/logo.svg
-	inkscape -b '#ffffff' -w 38 -h 38 -e $@ $?
+png/browser-plugin/toolbar-on-36.png: svg/logo.svg
+	inkscape -b '#ffffff' -w 36 -h 36 -e $@ $?
+	
+png/browser-plugin/toolbar-on-64.png: svg/logo.svg
+	inkscape -b '#ffffff' -w 64 -h 64 -e $@ $?
 
-png/browser-plugin/toolbar-off-a@2x.png: svg/browser-plugin/off.svg
+png/browser-plugin/toolbar-off-32.png: svg/browser-plugin/off.svg
 	inkscape -b '#d3d3d3' -w 32 -h 32 -e $@ $?
 
-png/browser-plugin/toolbar-off-b@2x.png: svg/browser-plugin/off.svg
-	inkscape -b '#d3d3d3' -w 38 -h 38 -e $@ $?
+png/browser-plugin/toolbar-off-36.png: svg/browser-plugin/off.svg
+	inkscape -b '#d3d3d3' -w 36 -h 36 -e $@ $?
 
-png/browser-plugin/toolbar-disabled-a@2x.png: svg/browser-plugin/disabled.svg
+png/browser-plugin/toolbar-off-64.png: svg/browser-plugin/off.svg
+	inkscape -b '#d3d3d3' -w 64 -h 64 -e $@ $?
+	
+png/browser-plugin/toolbar-disabled-32.png: svg/browser-plugin/disabled.svg
 	inkscape -b '#d3d3d3' -w 32 -h 32 -e $@ $?
 
-png/browser-plugin/toolbar-disabled-b@2x.png: svg/browser-plugin/disabled.svg
-	inkscape -b '#d3d3d3' -w 38 -h 38 -e $@ $?
+png/browser-plugin/toolbar-disabled-36.png: svg/browser-plugin/disabled.svg
+	inkscape -b '#d3d3d3' -w 36 -h 36 -e $@ $?
 
+png/browser-plugin/toolbar-disabled-64.png: svg/browser-plugin/disabled.svg
+	inkscape -b '#d3d3d3' -w 64 -h 64 -e $@ $?
+	
 convert: \
 	png/logo.png \
 	png/logo@2x.png \
@@ -192,18 +201,18 @@ convert: \
 	png/browser-plugin/install-icon@3x.png \
 	png/browser-plugin/install-icon@4x.png \
 	png/browser-plugin/install-icon@8x.png \
-	png/browser-plugin/toolbar-on-a.png \
-	png/browser-plugin/toolbar-on-b.png \
-	png/browser-plugin/toolbar-off-a.png \
-	png/browser-plugin/toolbar-off-b.png \
-	png/browser-plugin/toolbar-disabled-a.png \
-	png/browser-plugin/toolbar-disabled-b.png \
-	png/browser-plugin/toolbar-on-a@2x.png \
-	png/browser-plugin/toolbar-on-b@2x.png \
-	png/browser-plugin/toolbar-off-a@2x.png \
-	png/browser-plugin/toolbar-off-b@2x.png \
-	png/browser-plugin/toolbar-disabled-a@2x.png \
-	png/browser-plugin/toolbar-disabled-b@2x.png
+	png/browser-plugin/toolbar-on-16.png \
+	png/browser-plugin/toolbar-on-18.png \
+	png/browser-plugin/toolbar-off-16.png \
+	png/browser-plugin/toolbar-off-18.png \
+	png/browser-plugin/toolbar-disabled-16.png \
+	png/browser-plugin/toolbar-disabled-18.png \
+	png/browser-plugin/toolbar-on-32.png \
+	png/browser-plugin/toolbar-on-36.png \
+	png/browser-plugin/toolbar-off-32.png \
+	png/browser-plugin/toolbar-off-36.png \
+	png/browser-plugin/toolbar-disabled-32.png \
+	png/browser-plugin/toolbar-disabled-36.png
 
 optimize:
 	optipng -quiet png/browser-plugin/*.png png/banner/*.png png/banner/coin-close-animation/*.png
@@ -245,9 +254,12 @@ copy-firefox:
 	cp png/browser-plugin/linkedin@2x.png build/dothiv-firefox/data/images/share
 	cp png/browser-plugin/twitter.png build/dothiv-firefox/data/images/share
 	cp png/browser-plugin/twitter@2x.png build/dothiv-firefox/data/images/share
-	# FIXME: New sizes.
 	mkdir -p build/dothiv-firefox/data/images/toolbar
-	cp png/browser-plugin/toolbar-* build/dothiv-firefox/data/images/toolbar/
+	find png/browser-plugin/ -name toolbar-\*-18.png | xargs -i cp {} build/dothiv-firefox/data/images/toolbar/
+	find png/browser-plugin/ -name toolbar-\*-32.png | xargs -i cp {} build/dothiv-firefox/data/images/toolbar/
+	find png/browser-plugin/ -name toolbar-\*-36.png | xargs -i cp {} build/dothiv-firefox/data/images/toolbar/
+	find png/browser-plugin/ -name toolbar-\*-64.png | xargs -i cp {} build/dothiv-firefox/data/images/toolbar/
+	
 
 copy-browser: copy-chrome copy-firefox
 
