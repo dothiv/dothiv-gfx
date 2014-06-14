@@ -14,6 +14,23 @@ png/logo@2x.png: svg/logo.svg
 png/logo@4x.png: svg/logo.svg
 	inkscape -b '#ffffff' -w 128 -e $@ $?
 	convert $@ -trim $@
+	
+# Registry Logo
+
+png/logo-registry-white-256.png: svg/logo-registry.svg
+	inkscape -b '#ffffff' -y 182 -w 256 -h 256 -e $@ $?
+
+png/logo-registry.png: svg/logo-registry.svg
+	inkscape -b '#ffffff' -w 32 -e $@ $?
+	convert $@ -trim $@
+
+png/logo-registry@2x.png: svg/logo-registry.svg
+	inkscape -b '#ffffff' -w 64 -e $@ $?
+	convert $@ -trim $@
+
+png/logo-registry@4x.png: svg/logo-registry.svg
+	inkscape -b '#ffffff' -w 128 -e $@ $?
+	convert $@ -trim $@
 
 # Banner
 
@@ -179,6 +196,10 @@ convert: \
 	png/logo@2x.png \
 	png/logo@4x.png \
 	png/logo-white-256.png \
+	png/logo-registry.png \
+	png/logo-registry@2x.png \
+	png/logo-registry@4x.png \
+	png/logo-registry-white-256.png \
 	png/banner/ribbon.png \
 	png/banner/ribbon@2x.png \
 	png/banner/facebook.png \

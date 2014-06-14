@@ -8,6 +8,12 @@ This repository contains graphics used by various dotHIV projects.
  * License: No use without written permission. 
  * Copyright: [dotHIV gemeinnütziger e.V.](http://dotHIV.org/), Lehmbruckstrasse 3, D-10245 Berlin
 
+## ![dotHIV Registry Logo](./png/logo-registry@4x.png) // TLD dotHIV Registry Logo
+
+ * [SVG](./svg/logo-registry.svg)
+ * License: No use without written permission. 
+ * Copyright: [TLD dotHIV Registry GmbH](http://dotHIV.org/), Melchiorstraße 26, D-10179 Berlin
+
 ## ![Red Ribbon](./png/banner/ribbon@2x.png) // Red Ribbon
 
  * [SVG](./svg/ribbon.svg)
