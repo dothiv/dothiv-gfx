@@ -31,14 +31,14 @@ This repository contains graphics used by various dotHIV projects.
 
 ## Browser Plugin Icons
 
-### ![disabled](./png/browser-plugin/toolbar-disabled-a@2x.png) // Disabled state
+### ![disabled](./png/browser-plugin/toolbar-disabled-32.png) // Disabled state
 
  * [SVG](./svg/browser-plugin/disabled.svg)
  * License: No use without written permission.
  * Author: [Markus Tacker](mailto:m@dotHIV.org)
  * Copyright: [dotHIV gemeinnütziger e.V.](http://dotHIV.org/), Lehmbruckstrasse 3, D-10245 Berlin
 
-### ![disabled](./png/browser-plugin/toolbar-off-a@2x.png) // Off state
+### ![disabled](./png/browser-plugin/toolbar-off-32.png) // Off state
 
  * [SVG](./svg/browser-plugin/off.svg)
  * License: No use without written permission. 
