@@ -20,14 +20,13 @@ This repository contains graphics used by various dotHIV projects.
  * License: Public Domain
  * Author: [Markus Tacker](mailto:m@dotHIV.org), based on a work by [Amada44](http://de.wikinews.org/wiki/Datei:World_Aids_Day_Ribbon.svg)
 
-## Banner Graphics
+## Clickcounter Graphics
 
-### ![coin close](./gif/banner/coin-close@2x.gif) // Coin Close Animation
+### OK circle
 
- * [Source Frames](./bitmap/coin-close-animation/)
+ * [SVG](./svg/green-tick.svg)
  * License: No use without written permission.
- * Authors: [Philipp Kafkoulas](mailto:pt@dotHIV.org) and [Markus Tacker](mailto:m@dotHIV.org)
- * Copyright: [dotHIV gemeinnütziger e.V.](http://dotHIV.org/), Lehmbruckstrasse 3, D-10245 Berlin
+ * Copyright: [TLD dotHIV Registry GmbH](http://dotHIV.org/), Melchiorstraße 26, D-10179 Berlin
 
 ## Browser Plugin Icons
 
