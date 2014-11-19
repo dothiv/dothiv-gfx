@@ -19,6 +19,49 @@ This repository contains graphics used by various dotHIV projects.
  * [SVG](./svg/ribbon.svg)
  * License: Public Domain
  * Author: [Markus Tacker](mailto:m@dotHIV.org), based on a work by [Amada44](http://de.wikinews.org/wiki/Datei:World_Aids_Day_Ribbon.svg)
+ 
+## Website Icons
+
+### Coin
+
+ * [SVG](./svg/coin.svg)
+ * License: No use without written permission. 
+ * Author: [TLD dotHIV Registry GmbH](http://dotHIV.org/), Melchiorstraße 26, D-10179 Berlin
+ 
+### Coin stash
+
+ * [SVG](./svg/coin-stash.svg)
+ * License: No use without written permission. 
+ * Author: [TLD dotHIV Registry GmbH](http://dotHIV.org/), Melchiorstraße 26, D-10179 Berlin
+ 
+### Three coins
+
+ * [SVG](./svg/three-coins.svg)
+ * License: No use without written permission. 
+ * Author: [TLD dotHIV Registry GmbH](http://dotHIV.org/), Melchiorstraße 26, D-10179 Berlin
+ 
+### Clicking Hand
+
+ * [SVG](./svg/clicking-hand.svg)
+ * License: [Creative Commons – Attribution (CC BY 3.0)](http://creativecommons.org/licenses/by/3.0/us/)
+ * Author: [Roman Zubakov](http://www.thenounproject.com/roman.zubakov) from the [Noun Project](http://www.thenounproject.com)
+ 
+### Money stash
+
+ * [SVG](./svg/money-stash.svg)
+ * License: [Creative Commons – Attribution (CC BY 3.0)](http://creativecommons.org/licenses/by/3.0/us/)
+ * Author: [Alex Berkowitz](http://www.thenounproject.com/berky93) from the [Noun Project](http://www.thenounproject.com)
+
+### People
+
+ * [SVG](./svg/people.svg)
+ * License: [Creative Commons – Attribution (CC BY 3.0)](http://creativecommons.org/licenses/by/3.0/us/)
+ * Author: [useiconic.com](http://www.thenounproject.com/useiconic.com) from the [Noun Project](http://www.thenounproject.com)
+ 
+### Heart
+
+ * [SVG](./svg/heart.svg)
+ * License: Public Domain
 
 ## Clickcounter Graphics
 
