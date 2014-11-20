@@ -1,9 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" version="1.1" x="0px" y="0px" width="100px" height="100px" viewBox="-0.088 -4.115 100 100" enable-background="new -0.088 -4.115 100 100" xml:space="preserve">
-<style type="text/css">
-
-
-</style>
-<defs>
-</defs>
-<path d="M49.937,8.568c-11.422-11.424-29.944-11.424-41.369,0s-11.424,29.945,0,41.369l41.369,41.37l41.371-41.37  c11.424-11.423,11.424-29.944,0-41.369C79.885-2.856,61.36-2.856,49.937,8.568z"/>
-</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   x="0px"
+   y="0px"
+   width="1024"
+   height="1024"
+   viewBox="-0.088 -4.115 1024 1024"
+   enable-background="new -0.088 -4.115 100 100"
+   xml:space="preserve"
+   id="svg3002"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="heart.svg"><metadata
+     id="metadata3012"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1181"
+     id="namedview3010"
+     showgrid="false"
+     inkscape:zoom="0.417193"
+     inkscape:cx="440.192"
+     inkscape:cy="328.5998"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3002" /><style
+     type="text/css"
+     id="style3004" /><defs
+     id="defs3006" /><path
+     d="m 511.90538,205.57074 c -93.11007,-93.12638 -244.09805,-93.12638 -337.23258,0 -93.134522,93.12637 -93.126372,244.1062 0,337.23257 L 511.90538,880.04404 849.15426,542.80331 c 93.12637,-93.11822 93.12637,-244.09805 0,-337.23257 -93.11823,-93.12638 -244.13066,-93.12638 -337.24888,0 z"
+     id="path3008"
+     inkscape:connector-curvature="0" /></svg>
